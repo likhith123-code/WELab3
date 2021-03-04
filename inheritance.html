@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head><title> sample page 3</title></head>
+    <body>
+        <script>
+            class user {
+                constructor(uname,email,pass) {
+                this.uname=uname;
+                this.email = email;
+                this.pass = pass;
+                 }
+                 count(){
+                
+                 }
+                 register(){
+                    console.log("Username of person is : "+this.uname);
+                 }
+            }
+            class name extends user{
+                constructor(uname,email,pass,pack){
+                    super(uname,email,pass);
+                    this.pack=pack;
+                }
+                getPackage(){
+                    console.log("Package is : "+this.pack);
+                    console.log("name is :"+this.uname);
+                }
+            }
+            var p1 = new name("likhith","likhith123","kumar",23000);
+            p1.getPackage();
+        </script>
+    </body>
+</html>

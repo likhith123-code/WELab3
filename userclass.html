@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Sample page2</title></head>
+    <body>
+    <script>
+        class user{
+            static count=1;
+            constructor(uname,email,pass) {
+                this.uname=uname;
+                this.email = email;
+                this.pass = pass;
+            }
+            counter(){
+                console.log("number of users is "+user.count);
+            }
+            register(){
+                console.log("Username of person is : "+this.uname);
+            }
+        }
+        var person1 = new user("likhith","likhith123","kumar");
+        person1.register();
+        person1.counter();
+        var person2 = new user("likhithkumar","likhith123","kumar");
+        person2.register();
+        person2.counter();
+    </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head><title>Sample page</title></head>   
+<body>
+    Enter a number : <input id="num" type="number" placeholder="Enter the number" />
+    <br>
+    <button onclick="calculate()" >Get Answer</button>
+    <p id="answer">
+
+    </p>
+<script>
+    const calculate = () => {
+        var n = document.getElementById('num').value;
+        var sum=1;
+        for(var i=1;i<=n;i++){
+            sum=sum*i;
+        }
+       document.getElementById('answer').innerHTML=sum;
+
+    }
+</script>
+</body>
+
+</html>
