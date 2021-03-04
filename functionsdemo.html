@@ -13,7 +13,18 @@
             var [name,lname,mname] = sample1();
             console.log("First name : "+name);
             console.log("last name : "+lname);
-            console.log("middle name : "+mname)
+            console.log("middle name : "+mname);
+            // passing obj to functions
+            function passObj(obj){
+                console.log(obj.name);
+                console.log(obj.age);
+            }
+            var obj1 = {
+                name:"sukumar",
+                age:34
+            }
+            passObj(obj1);
+
         </script>
     </body>
 </html>
