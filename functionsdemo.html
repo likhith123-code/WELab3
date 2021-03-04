@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Sample page 5</title></head>
+    <body>
+        <script>
+            // returning multiple values 
+            function sample1(){
+                var fname = "likhith";
+                var lname = "kumar";
+                var mname = "mahesh";
+                return [fname,lname,mname];
+            }
+            var [name,lname,mname] = sample1();
+            console.log("First name : "+name);
+            console.log("last name : "+lname);
+            console.log("middle name : "+mname)
+        </script>
+    </body>
+</html>
