@@ -4,13 +4,14 @@
     <body>
     <script>
         class user{
-            static count=1;
+            static count=0;
             constructor(uname,email,pass) {
                 this.uname=uname;
                 this.email = email;
                 this.pass = pass;
             }
             counter(){
+                user.count = user.count+1;
                 console.log("number of users is "+user.count);
             }
             register(){
